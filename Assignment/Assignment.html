@@ -14878,7 +14878,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14897,6 +14897,61 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Series_reference    20254
+Period              20254
+Data_value          15795
+Suppressed           2875
+STATUS              20254
+UNITS               20254
+Magnitude           20254
+Subject             20254
+Group               20254
+Series_title_1      20254
+Series_title_2      20254
+Series_title_3      20254
+Series_title_4          0
+Series_title_5          0
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
@@ -14930,12 +14985,28 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">({</span>
     <span class="s1">&#39;Series_reference&#39;</span><span class="p">:</span><span class="s1">&#39;-1&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;Data_value&#39;</span><span class="p">:</span><span class="mi">10001</span><span class="p">,</span>
+    <span class="s1">&#39;Data_value&#39;</span><span class="p">:</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Data_value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span>
     <span class="s1">&#39;Suppressed&#39;</span><span class="p">:</span><span class="s1">&#39;10002&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Series_title_4&#39;</span><span class="p">:</span><span class="s1">&#39;10003&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Series_title_5&#39;</span><span class="p">:</span><span class="s1">&#39;10004&#39;</span><span class="p">,</span>
@@ -14952,7 +15023,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14973,7 +15044,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -15007,7 +15078,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span>
@@ -15028,7 +15099,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
@@ -15174,7 +15245,7 @@ dtype: int64</pre>
       <th>20249</th>
       <td>BDCQ.SEE3999A</td>
       <td>2017.06</td>
-      <td>10001</td>
+      <td>2196974.0</td>
       <td>Y</td>
       <td>C</td>
       <td>Number</td>
@@ -15191,7 +15262,7 @@ dtype: int64</pre>
       <th>20250</th>
       <td>BDCQ.SEE3999A</td>
       <td>2017.09</td>
-      <td>10001</td>
+      <td>2196974.0</td>
       <td>Y</td>
       <td>C</td>
       <td>Number</td>
@@ -15208,7 +15279,7 @@ dtype: int64</pre>
       <th>20251</th>
       <td>BDCQ.SEE3999A</td>
       <td>2017.12</td>
-      <td>10001</td>
+      <td>2196974.0</td>
       <td>Y</td>
       <td>C</td>
       <td>Number</td>
@@ -15225,7 +15296,7 @@ dtype: int64</pre>
       <th>20252</th>
       <td>BDCQ.SEE3999A</td>
       <td>2018.03</td>
-      <td>10001</td>
+      <td>2196974.0</td>
       <td>Y</td>
       <td>C</td>
       <td>Number</td>
@@ -15242,7 +15313,7 @@ dtype: int64</pre>
       <th>20253</th>
       <td>BDCQ.SEE3999A</td>
       <td>2018.06</td>
-      <td>10001</td>
+      <td>2196974.0</td>
       <td>Y</td>
       <td>C</td>
       <td>Number</td>
@@ -15272,62 +15343,10 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0        False
-1        False
-2        False
-3        False
-4        False
-         ...  
-20249    False
-20250    False
-20251    False
-20252    False
-20253    False
-Length: 20254, dtype: bool</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Data_value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15351,7 +15370,738 @@ Length: 20254, dtype: bool</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0</pre>
+<pre>0        False
+1        False
+2        False
+3        False
+4        False
+         ...  
+20249     True
+20250     True
+20251     True
+20252     True
+20253     True
+Name: Data_value, Length: 20254, dtype: bool</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df1</span><span class="o">.</span><span class="n">head</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>19792
+20209
+6111
+20252
+20251
+20252
+20252
+20253
+20249
+20251
+20138
+20251
+20253
+20253
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">300</span><span class="p">:</span><span class="mi">30</span> <span class="p">,</span> <span class="mi">0</span><span class="p">::</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Series_reference</th>
+      <th>Suppressed</th>
+      <th>Magnitude</th>
+      <th>Series_title_1</th>
+      <th>Series_title_4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>BDCQ.SEA1AA</td>
+      <td>10002</td>
+      <td>0</td>
+      <td>Filled jobs</td>
+      <td>10003</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>BDCQ.SEA1AA</td>
+      <td>10002</td>
+      <td>0</td>
+      <td>Filled jobs</td>
+      <td>10003</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>BDCQ.SEA1AS</td>
+      <td>10002</td>
+      <td>0</td>
+      <td>Filled jobs</td>
+      <td>10003</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>BDCQ.SEA1AT</td>
+      <td>10002</td>
+      <td>0</td>
+      <td>Filled jobs</td>
+      <td>10003</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>BDCQ.SEA1AT</td>
+      <td>10002</td>
+      <td>0</td>
+      <td>Filled jobs</td>
+      <td>10003</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>BDCQ.SEA1BA</td>
+      <td>10002</td>
+      <td>0</td>
+      <td>Filled jobs</td>
+      <td>10003</td>
+    </tr>
+    <tr>
+      <th>180</th>
+      <td>BDCQ.SEA1BS</td>
+      <td>10002</td>
+      <td>0</td>
+      <td>Filled jobs</td>
+      <td>10003</td>
+    </tr>
+    <tr>
+      <th>210</th>
+      <td>BDCQ.SEA1BS</td>
+      <td>10002</td>
+      <td>0</td>
+      <td>Filled jobs</td>
+      <td>10003</td>
+    </tr>
+    <tr>
+      <th>240</th>
+      <td>BDCQ.SEA1BT</td>
+      <td>10002</td>
+      <td>0</td>
+      <td>Filled jobs</td>
+      <td>10003</td>
+    </tr>
+    <tr>
+      <th>270</th>
+      <td>BDCQ.SEA1CA</td>
+      <td>10002</td>
+      <td>0</td>
+      <td>Filled jobs</td>
+      <td>10003</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Series_reference    20254
+Period              20254
+Data_value          20254
+Suppressed          20254
+STATUS              20254
+UNITS               20254
+Magnitude           20254
+Subject             20254
+Group               20254
+Series_title_1      20254
+Series_title_2      20254
+Series_title_3      20254
+Series_title_4      20254
+Series_title_5      20254
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Data_value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Data_value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>531694.7604786464
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>count    2.025400e+04
+mean     5.316948e+05
+std      8.999461e+05
+min      1.225683e+00
+25%      2.679645e+03
+50%      2.136000e+04
+75%      2.386078e+05
+max      2.196974e+06
+Name: Data_value, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Series_reference</th>
+      <th>Period</th>
+      <th>Data_value</th>
+      <th>Suppressed</th>
+      <th>STATUS</th>
+      <th>UNITS</th>
+      <th>Magnitude</th>
+      <th>Subject</th>
+      <th>Group</th>
+      <th>Series_title_1</th>
+      <th>Series_title_2</th>
+      <th>Series_title_3</th>
+      <th>Series_title_4</th>
+      <th>Series_title_5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>20249</th>
+      <td>BDCQ.SEE3999A</td>
+      <td>2017.06</td>
+      <td>2196974.0</td>
+      <td>Y</td>
+      <td>C</td>
+      <td>Number</td>
+      <td>0</td>
+      <td>Business Data Collection - BDC</td>
+      <td>Territorial authority by employment variable</td>
+      <td>Filled jobs (workplace location based)</td>
+      <td>Area Outside Territorial Authority</td>
+      <td>Actual</td>
+      <td>10003</td>
+      <td>10004</td>
+    </tr>
+    <tr>
+      <th>20250</th>
+      <td>BDCQ.SEE3999A</td>
+      <td>2017.09</td>
+      <td>2196974.0</td>
+      <td>Y</td>
+      <td>C</td>
+      <td>Number</td>
+      <td>0</td>
+      <td>Business Data Collection - BDC</td>
+      <td>Territorial authority by employment variable</td>
+      <td>Filled jobs (workplace location based)</td>
+      <td>Area Outside Territorial Authority</td>
+      <td>Actual</td>
+      <td>10003</td>
+      <td>10004</td>
+    </tr>
+    <tr>
+      <th>20251</th>
+      <td>BDCQ.SEE3999A</td>
+      <td>2017.12</td>
+      <td>2196974.0</td>
+      <td>Y</td>
+      <td>C</td>
+      <td>Number</td>
+      <td>0</td>
+      <td>Business Data Collection - BDC</td>
+      <td>Territorial authority by employment variable</td>
+      <td>Filled jobs (workplace location based)</td>
+      <td>Area Outside Territorial Authority</td>
+      <td>Actual</td>
+      <td>10003</td>
+      <td>10004</td>
+    </tr>
+    <tr>
+      <th>20252</th>
+      <td>BDCQ.SEE3999A</td>
+      <td>2018.03</td>
+      <td>2196974.0</td>
+      <td>Y</td>
+      <td>C</td>
+      <td>Number</td>
+      <td>0</td>
+      <td>Business Data Collection - BDC</td>
+      <td>Territorial authority by employment variable</td>
+      <td>Filled jobs (workplace location based)</td>
+      <td>Area Outside Territorial Authority</td>
+      <td>Actual</td>
+      <td>10003</td>
+      <td>10004</td>
+    </tr>
+    <tr>
+      <th>20253</th>
+      <td>BDCQ.SEE3999A</td>
+      <td>2018.06</td>
+      <td>2196974.0</td>
+      <td>Y</td>
+      <td>C</td>
+      <td>Number</td>
+      <td>0</td>
+      <td>Business Data Collection - BDC</td>
+      <td>Territorial authority by employment variable</td>
+      <td>Filled jobs (workplace location based)</td>
+      <td>Area Outside Territorial Authority</td>
+      <td>Actual</td>
+      <td>10003</td>
+      <td>10004</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Maximum</span><span class="o">=</span><span class="n">df1</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">Maximum</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Series_reference                                   BDCQ.SEE3999A
+Period                                                   2022.06
+Data_value                                             2196974.0
+Suppressed                                                     Y
+STATUS                                                         R
+UNITS                                                      Value
+Magnitude                                                      6
+Subject                           Business Data Collection - BDC
+Group               Territorial authority by employment variable
+Series_title_1                                    Total earnings
+Series_title_2                                   Wholesale Trade
+Series_title_3                                             Trend
+Series_title_4                                             10003
+Series_title_5                                             10004
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Minimum</span><span class="o">=</span><span class="n">df1</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">Minimum</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Series_reference                       BDCQ.SEA1AA
+Period                                     2011.06
+Data_value                                1.225683
+Suppressed                                   10002
+STATUS                                           C
+UNITS                                       Number
+Magnitude                                        0
+Subject             Business Data Collection - BDC
+Group                   Age by employment variable
+Series_title_1                         Filled jobs
+Series_title_2                               15-19
+Series_title_3                              Actual
+Series_title_4                               10003
+Series_title_5                               10004
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">total</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Data_value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Data_value&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">Minimum</span><span class="p">[</span><span class="s1">&#39;Data_value&#39;</span><span class="p">]:</span>
+        <span class="n">total</span><span class="o">+=</span><span class="mi">1</span>
+<span class="c1">#         print(&quot;Minimum indexes: &quot;+str(i))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total minimum&quot;</span><span class="p">,</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Total minimum 4460
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Period</th>
+      <th>Data_value</th>
+      <th>Magnitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Period</th>
+      <td>1.000000</td>
+      <td>0.032075</td>
+      <td>-0.039785</td>
+    </tr>
+    <tr>
+      <th>Data_value</th>
+      <td>0.032075</td>
+      <td>1.000000</td>
+      <td>-0.229514</td>
+    </tr>
+    <tr>
+      <th>Magnitude</th>
+      <td>-0.039785</td>
+      <td>-0.229514</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
